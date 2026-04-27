@@ -56,7 +56,7 @@ app.get('/api/aqi', async (req, res) => {
       'Nashik':      { lat: 19.99, lng: 73.79 },
       'Aurangabad':  { lat: 19.88, lng: 75.34 },
       'Solapur':     { lat: 17.69, lng: 75.91 },
-      'Kolhapur':    { lat: 16.70, lng: 74.24 }
+'Kolhapur':    { lat: 16.70, lng: 74.24 },
       // Extra Rajasthan
 'Jhunjhunu':      { lat: 28.13, lng: 75.40 },
 'Nagaur':         { lat: 27.20, lng: 73.73 },
