@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rajasthan Dashboard — Live Weather, AQI & News</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="/" class="back-btn">← Home</a>
+    <h1>🏜️ Rajasthan Dashboard</h1>
+    <p>Live Weather • AQI • News • Updated in Real Time</p>
+  </header>
+
+  <div class="district-bar">
+    <select id="districtSelect" onchange="changeDistrict()">
+      <option value="Jaipur">Jaipur</option>
+      <option value="Jodhpur">Jodhpur</option>
+      <option value="Udaipur">Udaipur</option>
+      <option value="Kota">Kota</option>
+      <option value="Ajmer">Ajmer</option>
+      <option value="Bikaner">Bikaner</option>
+      <option value="Alwar">Alwar</option>
+      <option value="Bharatpur">Bharatpur</option>
+      <option value="Barmer">Barmer</option>
+      <option value="Sikar">Sikar</option>
+    </select>
+  </div>
+
+  <div class="dashboard">
+
+    <!-- Weather Card -->
+    <div class="dash-card" id="weatherCard">
+      <h3>🌤️ Weather — <span id="weatherCity">Jaipur</span></h3>
+      <div id="weatherData">
+        <div class="skeleton tall"></div>
+        <div class="skeleton short"></div>
+      </div>
+    </div>
+
+    <!-- AQI Card -->
+    <div class="dash-card" id="aqiCard">
+      <h3>💨 AQI — <span id="aqiCity">Jaipur</span></h3>
+      <div id="aqiData">
+        <div class="skeleton tall"></div>
+        <div class="skeleton short"></div>
+      </div>
+    </div>
+
+    <!-- News Card -->
+    <div class="dash-card full-width" id="newsCard">
+      <h3>📰 <span id="newsCity">Jaipur</span> News</h3>
+      <div id="newsData">
+        <div class="skeleton"></div>
+        <div class="skeleton short"></div>
+        <div class="skeleton"></div>
+        <div class="skeleton short"></div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Budget Card -->
+<div class="dash-card full-width" id="budgetCard">
+  <h3>💰 Rajasthan Budget 2024-25</h3>
+  <div class="budget-grid">
+    <div class="budget-item">
+      <div class="budget-label">Total Budget</div>
+      <div class="budget-value">₹5.97 Lakh Cr</div>
+    </div>
+    <div class="budget-item">
+      <div class="budget-label">Education</div>
+      <div class="budget-value">₹75,600 Cr</div>
+      <div class="budget-bar"><div class="budget-fill" style="width:65%"></div></div>
+    </div>
+    <div class="budget-item">
+      <div class="budget-label">Health</div>
+      <div class="budget-value">₹28,948 Cr</div>
+      <div class="budget-bar"><div class="budget-fill" style="width:40%"></div></div>
+    </div>
+    <div class="budget-item">
+      <div class="budget-label">Roads & Infrastructure</div>
+      <div class="budget-value">₹32,000 Cr</div>
+      <div class="budget-bar"><div class="budget-fill" style="width:45%"></div></div>
+    </div>
+    <div class="budget-item">
+      <div class="budget-label">Agriculture</div>
+      <div class="budget-value">₹62,000 Cr</div>
+      <div class="budget-bar"><div class="budget-fill" style="width:55%"></div></div>
+    </div>
+    <div class="budget-item">
+      <div class="budget-label">Energy & Power</div>
+      <div class="budget-value">₹22,000 Cr</div>
+      <div class="budget-bar"><div class="budget-fill" style="width:30%"></div></div>
+    </div>
+    <div class="budget-item">
+      <div class="budget-label">Social Welfare</div>
+      <div class="budget-value">₹45,000 Cr</div>
+      <div class="budget-bar"><div class="budget-fill" style="width:50%"></div></div>
+    </div>
+  </div>
+</div>
+
+  <script src="rajasthan.js"></script>
+</body>
+</html>

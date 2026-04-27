@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>India State Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🇮🇳 India State Portal</h1>
+    <p>Weather • AQI • News • Budget — All in One Place</p>
+  </header>
+
+  <main>
+    <div class="search-box">
+      <h2>Select a State</h2>
+      <select id="stateSelect">
+        <option value="">-- Choose State --</option>
+        <option value="rajasthan">Rajasthan</option>
+        <option value="uttar-pradesh">Uttar Pradesh</option>
+        <option value="gujarat">Gujarat</option>
+        <option value="maharashtra">Maharashtra</option>
+      </select>
+      <button onclick="goToState()">View Dashboard →</button>
+    </div>
+
+    <div class="cards">
+      <div class="card">🌤️ Weather</div>
+      <div class="card">💨 AQI</div>
+      <div class="card">📰 News</div>
+      <div class="card">💰 Budget</div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
